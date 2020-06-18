@@ -1,13 +1,11 @@
 //console.log("kjhk")
 let bodyElement = document.querySelector("body")
-
 let finalArray =[]
 for ( let i = 1; i <=20; i = i + 1){
     finalArray.push(i)
 
 }
 let finalString = finalArray.join(", ")
-
 creatAppendHeader ("Kata 1")
 
 let newDiv = document.createElement('div')
@@ -19,8 +17,8 @@ function creatAppendHeader(headerText){
     newHeader.append(headerText)
     bodyElement.append(newHeader)
  }
+
  creatAppendHeader("kata 2")
- 
  let finalArray2 =[]
 for ( let i = 2; i <=20; i = i + 2){
     finalArray2.push(i)
@@ -260,6 +258,80 @@ for (let i = 0; i < 20; i++) {
 let newDiv18 = document.createElement('div')
 newDiv18.append(biggestNumber)
 bodyElement.append(newDiv18)
+
+creatAppendHeader("kata 19")
+
+for ( let i = 0; i < 20; i++){
+    let newDiv19 = document.createElement('div')
+    newDiv19.style.height= '20px';
+    newDiv19.style.backgroundColor = 'gray';
+    newDiv19.style.marginTop = '5px';
+    bodyElement.append(newDiv19)
+    
+}
+creatAppendHeader("kata 20")
+for ( let i = 105; i < 200; i=i+5){
+    let newDiv20 = document.createElement('div')
+    newDiv20.style.height= '20px'
+    newDiv20.style.backgroundColor='red'
+    newDiv20.style.marginTop = '5px';
+
+    newDiv20.style.width = i +'px'
+    bodyElement.append(newDiv20)
+}
+creatAppendHeader("kata 21")
+const sampleArray = [
+    469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 
+    456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
+];
+
+for (let k = 0; k < 20; k = k + 1) {
+    //sampleArray.push(k)
+    let newDiv21 = document.createElement('div')
+    newDiv21.style.width = sampleArray[k] + 'px';
+    newDiv21.style.height = '20px';
+    newDiv21.style.backgroundColor = 'gray';
+    newDiv21.style.marginTop = '5px';
+    bodyElement.append(newDiv21)
+
+}
+creatAppendHeader("kata 22")
+
+for (let k = 0; k < 20; k = k + 1) {
+   // sampleArray.push(k)
+    let newDiv22 = document.createElement('div')
+    newDiv22.style.width = sampleArray[k] + 'px';
+    newDiv22.style.height = '20px';
+    if (k % 2 === 0) {
+        newDiv22.style.backgroundColor = 'red'
+    }
+    else {
+        newDiv22.style.backgroundColor = 'gray'
+    }
+
+    newDiv22.style.marginTop = '5px';
+    bodyElement.append(newDiv22)
+}
+creatAppendHeader("kata 23")
+
+for (let k = 0; k < 20; k = k + 1) {
+    
+    let newDiv23 = document.createElement('div')
+    newDiv23.style.width = sampleArray[k] + 'px';
+    newDiv23.style.height = '20px';
+    if (sampleArray[k] % 2 === 0) {
+        newDiv23.style.backgroundColor = 'red'
+    }
+    else {
+        newDiv23.style.backgroundColor = 'gray'
+    }
+
+    newDiv23.style.marginTop = '5px';
+    bodyElement.append(newDiv23)
+}
+
+
+
 
 
 
